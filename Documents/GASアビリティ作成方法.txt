@@ -1,0 +1,41 @@
+GASアビリティ
+
+参考
+GASの入門
+https://qiita.com/atermwd/items/14b5c51e3e4a8a3f9ccc
+GASAbility内で主にできること
+https://qiita.com/koorinonaka/items/cf26af4433fda41134ac
+GASAbilityに登録するTagの意味
+https://lunanelis.hatenablog.com/entry/2022/05/10/035841
+
+
+概要
+タスクは「何かを開始し、イベントを受信、または終了するまで待つ」という非同期処理を提供します。
+
+どんなタスクを実行するかはAbility Tag(tag)で指定する
+タスク中にアクターが保持するtagをタスク内で設定できる
+本当にタスクを実行できるかは、実行時のアクターが持っているtagで判別できる
+
+GASの基本的な流れ
+
+Actor
+	「Give Ability」...................実行するGASのクラスを登録する
+	↓
+	「Send Gameplay Event to Actor」...Event Tagに実行したいGASのタグ
+	Event Tag
+
+GAS Ability
+	Ability Tags...............呼び出しに必要なtag　Event Tagに対応する
+	Activation Owned Tags......タスク実行中に保持するtag
+	Activation Required Tags...ここに登録しているtagが実行に必要
+	Activation Blocked Tags....ここに登録しているtagがあると実行しない
+	
+GAS Abilityの内容
+Event ActivateAbilityイベント...実行されたときにここから始まる
+	内容は以下参考
+	https://qiita.com/koorinonaka/items/cf26af4433fda41134ac
+	実行を終わらせたいときはCancelAbility or EndAbility
+	Abilityを終わらせる時は↑二つのどちらかを呼び出す　呼び出さないと終わらない→tagが消えない→バグの原因になる
+
+Event OnEndAbilityイベント.......終了時に呼び出されるイベント　CancelAbilityはWas CancelledがTrue
+
