@@ -1,0 +1,50 @@
+敵　パラメータ調整方法
+
+敵パラメータのDTは以下の階層にあります
+0_DataTables/Enemy
+
+
+DT_EnemiesTable
+敵の基本的なパラメータを記録する
+
+ID_Side........Enemy or Player、基本的にEnemyで。 Playerにするとロックオンの対象にならない
+SpawnClass.....スポーンさせるBPのクラス　親クラスはActor
+HPParams.......体力パラメータ
+Weapons........攻撃用のパラメータ　複数登録できる　使い方はSpawnClassの内で決める
+	damage........ヒット時の攻撃力
+	bulletSpeed...玉の速さ 単位はcm/s
+	range.........玉が消える距離　単位はcm
+	isPierce......ヒット時に弾を消すかどうかの設定　OFFの場合、敵にあたると消える
+	damageState...ヒットした相手のリアクションの種類
+	bulletClass...発射する弾のクラス　設定できるクラスはBP_BLT_baseBulletを継承しているもの
+
+WeaponHandle...DT_EnemyWeapomDatasから攻撃用パラメータを参照する　テンプレから選ぶイメージ
+　　　　　　　　ただし、読み込まれる順番はWeaponsから
+
+Abilities......DT_AbilityArraysからGASアビリティを登録する　プログラマー用かも
+　　　　　　　　DT_AbilityArraysは0_DataTables/GAS_Ability　にある
+
+DamageActionDatas...怯みのアニメーションや吹っ飛び距離の種類を選択する
+		　　DT_DamageActionDataにテンプレートが登録してある
+
+
+DT_EnemyWeapomDatas
+敵の攻撃のテンプレート
+damage........ヒット時の攻撃力
+bulletSpeed...玉の速さ 単位はcm/s
+range.........玉が消える距離　単位はcm
+isPierce......ヒット時に弾を消すかどうかの設定　OFFの場合、敵にあたると消える
+damageState...ヒットした相手のリアクションの種類
+bulletClass...発射する弾のクラス　設定できるクラスはBP_BLT_baseBulletを継承しているもの
+
+
+DT_DamageActionData
+怯み時のアニメーションや吹き飛び距離を登録する
+stagger, levitation, ... downなどあるが設定の仕方はすべて同じ
+key..............攻撃:1_Staggerなら、keyが1_Staggerと登録している怯みになる
+		  keyに1_Staggerと登録しないなら1_Staggerの攻撃が来ても反応しない
+montage..........怯み時に再生するアニメーションモンタージュ　登録していなくても吹き飛びは機能する
+knockBackSpeed...吹っ飛ぶ方向とスピード　x...左右 y...手前、奥 z...上下
+staggerTime......行動不能になる時間、吹っ飛ぶ時間
+isAir............空中に浮く判定　Trueの場合、staggerTimeではなく地面に接触するまで行動不能
+		  安全装置としてstaggerTime+1秒が経つと怯み終了
