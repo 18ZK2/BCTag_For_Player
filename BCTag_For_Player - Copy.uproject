@@ -1,0 +1,46 @@
+{
+    "FileVersion": 3,
+    "EngineAssociation": "5.7",
+    "Category": "",
+    "Description": "",
+    "Modules": [
+        {
+            "Name": "BCTag_For_Player",
+            "Type": "Runtime",
+            "LoadingPhase": "Default"
+        }
+    ],
+    "Plugins": [
+        {
+            "Name": "ModelingToolsEditorMode",
+            "Enabled": true
+        },
+        {
+            "Name": "GameplayAbilities",
+            "Enabled": true
+        },
+        {
+            "Name": "AnimationWarping",
+            "Enabled": true
+        },
+        {
+            "Name": "CascadeToNiagaraConverter",
+            "Enabled": true
+        },
+        {
+            "Name": "GameplayStateTree",
+            "Enabled": true
+        },
+        {
+            "Name": "StateTree",
+            "Enabled": true
+        },
+        {
+            "Name": "VisualStudioTools",
+            "Enabled": true,
+            "SupportedTargetPlatforms": [
+                "Win64"
+            ]
+        }
+    ]
+}
