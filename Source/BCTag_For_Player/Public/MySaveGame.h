@@ -16,6 +16,8 @@ class BCTAG_FOR_PLAYER_API UMySaveGame : public USaveGame
 	GENERATED_BODY()
 	
 public:
+
+	//FName Stageinfo.stageID, FS
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TMap< FName, FStageSaveData> StageData;
 };

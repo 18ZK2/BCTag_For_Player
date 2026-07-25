@@ -9,15 +9,13 @@ USTRUCT(BlueprintType)
 struct FStageInfo : public FTableRowBase
 {
     GENERATED_BODY()
-
-    // •\¦–¼
+    // ?ï¿½ï¿½\?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    FText StageName;
+    FName stageID;
 
-    // ‚±‚ÌƒXƒe[ƒW‚ğ‰ğ•ú‚·‚é‚½‚ß‚É•K—v‚ÈƒXƒe[ƒW
+    //if clear UnlockStages open
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
-    FName UnlockStageID;
-
+    TArray<FName> UnlockStageIDs;
     UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TSoftObjectPtr<UWorld> World;
 };
