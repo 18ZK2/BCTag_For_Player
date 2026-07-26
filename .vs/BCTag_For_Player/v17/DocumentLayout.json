@@ -1,12 +1,86 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7BAACF-FB17-36A1-B115-4AE2055F0882}|Intermediate\\ProjectFiles\\BCTag_For_Player.vcxproj|C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\StageInfo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB7BAACF-FB17-36A1-B115-4AE2055F0882}|Intermediate\\ProjectFiles\\BCTag_For_Player.vcxproj|solutionrelative:Source\\BCTag_For_Player\\Public\\StageInfo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7BAACF-FB17-36A1-B115-4AE2055F0882}|Intermediate\\ProjectFiles\\BCTag_For_Player.vcxproj|C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\MySaveGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB7BAACF-FB17-36A1-B115-4AE2055F0882}|Intermediate\\ProjectFiles\\BCTag_For_Player.vcxproj|solutionrelative:Source\\BCTag_For_Player\\Public\\MySaveGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7BAACF-FB17-36A1-B115-4AE2055F0882}|Intermediate\\ProjectFiles\\BCTag_For_Player.vcxproj|C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\StageSaveData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB7BAACF-FB17-36A1-B115-4AE2055F0882}|Intermediate\\ProjectFiles\\BCTag_For_Player.vcxproj|solutionrelative:Source\\BCTag_For_Player\\Public\\StageSaveData.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7BAACF-FB17-36A1-B115-4AE2055F0882}|Intermediate\\ProjectFiles\\BCTag_For_Player.vcxproj|C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Private\\MySaveGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB7BAACF-FB17-36A1-B115-4AE2055F0882}|Intermediate\\ProjectFiles\\BCTag_For_Player.vcxproj|solutionrelative:Source\\BCTag_For_Player\\Private\\MySaveGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StageInfo.h",
+              "DocumentMoniker": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\StageInfo.h",
+              "RelativeDocumentMoniker": "Source\\BCTag_For_Player\\Public\\StageInfo.h",
+              "ToolTip": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\StageInfo.h",
+              "RelativeToolTip": "Source\\BCTag_For_Player\\Public\\StageInfo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-07-25T11:42:57.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StageSaveData.h",
+              "DocumentMoniker": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\StageSaveData.h",
+              "RelativeDocumentMoniker": "Source\\BCTag_For_Player\\Public\\StageSaveData.h",
+              "ToolTip": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\StageSaveData.h",
+              "RelativeToolTip": "Source\\BCTag_For_Player\\Public\\StageSaveData.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-07-25T11:20:17.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MySaveGame.cpp",
+              "DocumentMoniker": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Private\\MySaveGame.cpp",
+              "RelativeDocumentMoniker": "Source\\BCTag_For_Player\\Private\\MySaveGame.cpp",
+              "ToolTip": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Private\\MySaveGame.cpp",
+              "RelativeToolTip": "Source\\BCTag_For_Player\\Private\\MySaveGame.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-07-25T11:12:48.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MySaveGame.h",
+              "DocumentMoniker": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\MySaveGame.h",
+              "RelativeDocumentMoniker": "Source\\BCTag_For_Player\\Public\\MySaveGame.h",
+              "ToolTip": "C:\\Users\\k2\\Documents\\Unreal Projects\\BCTag_For_Player\\Source\\BCTag_For_Player\\Public\\MySaveGame.h",
+              "RelativeToolTip": "Source\\BCTag_For_Player\\Public\\MySaveGame.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-07-25T11:12:47.661Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
