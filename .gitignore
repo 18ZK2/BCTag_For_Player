@@ -3,4 +3,5 @@
 /Saved
 /Binaries
 /.vs
-/.vscode
+*.sln
+.*uproject
