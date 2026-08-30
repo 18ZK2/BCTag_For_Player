@@ -1,0 +1,76 @@
+敵AIの作成方法
+
+参考
+詳しめの解説
+https://historia.co.jp/archives/29055/
+見返す用のメモ
+https://qiita.com/mintiatian/items/6c041f6cc0f2c215981c
+処理を中断する設定
+https://meimaru.hatenablog.com/entry/do-interrupt-handling-on-behaviortree
+
+
+作る流れ
+AIのルーチンを設計　＝　Bhavior Treeを作る
+必要な変数を洗い出し(プレイヤーの速度、距離？)　＝　Blackboardを作る
+Pawnに登録させるためのAIコントローラを作る
+
+Bhavior Treeの基本
+Rootがスタート
+
+Sequence...成功したら右のタスクへ　失敗したら中止　例えばタスク1が失敗すると、タスク2,3は実行しない
+Sequence
+|	|	|
+タスク１→タスク2→タスク3
+
+Selector...Sequenceの逆　失敗したら右のタスクへ　成功したら中止
+
+専用のアクションが欲しい→BTTaskを作る
+EventReceiveExecuteAI....呼び出されたときのイベント
+|
+この間に処理を書く
+|
+FinishExcecute...........タスク終了時に呼び出す
+
+Blackboardのパラメータをルーチン内で更新したい→BTServiceを作る
+Event ReciveActivationAI...呼び出されたときのイベント
+|
+SetBlackboardValue as ~~
+	Key.....変更するBlackBoardの変数の情報
+	Velue...代入する値
+	BTS内で作ったBlackboard Key Selector型の変数をPublicにしてBehaviorTreeか選べる
+
+
+Blackboardのパラメータから条件式を作りたい→BTDecoratorを作る
+イベント形式ではなく、関数形式　返り値はbool型
+
+PerformConditionCheckAI
+Owner Controller　AIコントローラの情報　Blackboardの情報を引き出せる
+Controlled Pawn　ポーンの実体
+|
+この間に条件式を書く
+|
+Return [bool]
+
+
+AIコントローラの作成
+親クラスはAI ControllerのBPを作成
+Event BeginPlay
+|
+Run Behavior Tree
+|
+Set Value as~~~
+Set Value as~~~
+Set Value as~~~
+...
+が大体の形になると思う
+
+BTAsset...実行するBehavior Tree
+
+Set Value as ~~
+Target.....対象のオブジェクト　大体Self
+Key Name...Blackboardの変数名
+Value......与えたい値
+
+AIController の登録
+動かしたいキャラのBPクラス内の詳細タブ
+Pawn->AIController Class に作ったAIコントローラを選ぶ
