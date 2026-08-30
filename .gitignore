@@ -4,4 +4,8 @@
 /Binaries
 /.vs
 *.sln
-.*uproject
+/Content/__ExternalActors__
+/Content/__ExternalObjects__
+/Config/*
+!DefaultGameplayTags.ini
+!DefaultInput.ini
