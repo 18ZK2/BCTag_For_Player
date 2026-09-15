@@ -6,6 +6,8 @@
 *.sln
 /Content/__ExternalActors__
 /Content/__ExternalObjects__
-/Config/*
+/Config/DefaultEditor.ini
+/Config/DefaultEngine.ini
+/COnfig/Localization/*
 !DefaultGameplayTags.ini
 !DefaultInput.ini
